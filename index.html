@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Aikoz Bazarbayeva | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Шрифты Google (можешь поменять) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header class="navbar">
+        <div class="nav-logo">Aikoz<span>.</span></div>
+        <nav class="nav-links" id="nav-links">
+            <a href="#hero">Главная</a>
+            <a href="#about">Обo мне</a>
+            <a href="#achievements">Достижения</a>
+            <a href="#projects">Проекты</a>
+            <a href="#homeworks">Домашки</a>
+            <a href="#certificates">Сертификаты</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle">
+            ☰
+        </button>
+    </header>
+
+    <!-- HERO секция -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-subtitle">Physics Student · Frontend Learner · Dreamer</p>
+            <h1 class="hero-title">Привет, я <span>Айкөз</span> 👋</h1>
+            <p class="hero-text">
+                Я студентка физики, изучаю HTML, CSS, JavaScript и создаю учебные проекты,
+                мини-приложения и красивые презентации. Здесь ты найдёшь информацию обо мне,
+                моих достижениях, сертификатах и учебных работах.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">Мои проекты</a>
+                <a href="#contact" class="btn outline">Связаться со мной</a>
+            </div>
+        </div>
+        <div class="hero-photo">
+            <!-- Поставь своё фото -->
+            <div class="photo-circle">
+                <img src="images/profile.jpg" alt="Aikoz photo">
+            </div>
+            <p class="hero-location">Сейчас: Riga, Latvia 🇱🇻</p>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="section" id="about">
+        <div class="section-header">
+            <h2>Обo мне</h2>
+            <p>Немного обо мне и моём пути</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>Кто я?</h3>
+                <p>
+                    Я — Базарбаева Айкоз, студентка 4 курса по специальности «Физика».
+                    Люблю науку, космос, программирование и красивый дизайн. Участвую
+                    в конференциях, пишу научные работы, делаю учебные сайты и презентации.
+                </p>
+                <p>
+                    Сейчас прохожу академическую мобильность в Риге и параллельно
+                    развиваюсь в веб-разработке: верстаю сайты, осваиваю JavaScript,
+                    экспериментирую с интерактивными проектами и AI-инструментами.
+                </p>
+            </div>
+            <div class="about-info">
+                <ul>
+                    <li><span>Имя:</span> Базарбаева Айкоз</li>
+                    <li><span>Специальность:</span> 6B05302 – Physics</li>
+                    <li><span>Email:</span> <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></li>
+                    <li><span>Телефон:</span> +XXX XX XXX XX XX</li>
+                    <li><span>Город:</span> Riga / Almaty</li>
+                    <li><span>Адрес:</span> Напиши сюда свой адрес, если хочешь</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Достижения -->
+    <section class="section" id="achievements">
+        <div class="section-header">
+            <h2>Достижения</h2>
+            <p>Олимпиады, конференции, проекты и награды</p>
+        </div>
+
+        <div class="cards-grid">
+            <!-- Карточка достижения -->
+            <article class="card">
+                <h3>Участие в международной конференции</h3>
+                <p class="card-tag">Astrophysics · 2025</p>
+                <p>
+                    Доклад по теме «Жұлдыздардың эволюциясы» и участие в студенческой
+                    конференции с исследовательским проектом.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Мини-проект SmartQuiz</h3>
+                <p class="card-tag">Web · Education</p>
+                <p>
+                    Разработка прототипа веб-приложения, которое помогает учителям
+                    быстро создавать квизы и Kahoot по загруженным материалам.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Стипендия / Грант</h3>
+                <p class="card-tag">Academic</p>
+                <p>
+                    Здесь можешь описать свою стипендию, грант или другое важное
+                    академическое достижение.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section class="section" id="projects">
+        <div class="section-header">
+            <h2>Проекты</h2>
+            <p>Учебные и личные проекты на HTML, CSS, JavaScript и не только</p>
+        </div>
+
+        <!-- Фильтры проектов -->
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="physics">Physics</button>
+            <button class="filter-btn" data-filter="ai">AI</button>
+        </div>
+
+        <div class="cards-grid" id="projects-grid">
+            <article class="card project-card" data-category="web">
+                <h3>HTML/CSS Exam Site</h3>
+                <p class="card-tag">Web · Frontend</p>
+                <p>
+                    Адаптивный сайт-шаблон для экзамена по HTML и CSS, с навигацией,
+                    изображениями и базовыми стилями.
+                </p>
+                <a href="#" class="card-link" target="_blank">Открыть проект</a>
+            </article>
+
+            <article class="card project-card" data-category="physics">
+                <h3>Astrophysics Presentation</h3>
+                <p class="card-tag">Physics · Astronomy</p>
+                <p>
+                    Презентация и материалы о звёздной эволюции и механике небесных тел,
+                    подготовленные для студенческой конференции.
+                </p>
+                <a href="#" class="card-link" target="_blank">Скачать слайды</a>
+            </article>
+
+            <article class="card project-card" data-category="ai">
+                <h3>Study-AI Notes</h3>
+                <p class="card-tag">AI · Education</p>
+                <p>
+                    Идея сервиса, который превращает лекции в конспекты, флеш-карты и
+                    mind-maps с помощью AI-моделей.
+                </p>
+                <a href="#" class="card-link" target="_blank">Описание проекта</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Домашки / задания -->
+    <section class="section" id="homeworks">
+        <div class="section-header">
+            <h2>Домашние задания</h2>
+            <p>Список выполненных работ, лабораторных и мини-проектов</p>
+        </div>
+
+        <div class="homework-list">
+            <div class="homework-item">
+                <h3>Лабораторная: Уравнение теплопроводности</h3>
+                <p class="homework-meta">Физика · 2025 · Курс: Термодинамика</p>
+                <p>
+                    Полный отчёт с выводом формулы, графиками и экспериментальными данными.
+                </p>
+                <a href="#" target="_blank">Скачать отчет</a>
+            </div>
+
+            <div class="homework-item">
+                <h3>HTML/CSS мини-страница «Product Card»</h3>
+                <p class="homework-meta">Web · Frontend Basics</p>
+                <p>
+                    Страница с описанием продукта, оформленная с помощью тегов форматирования, изображений и стилей.
+                </p>
+                <a href="#" target="_blank">Посмотреть код</a>
+            </div>
+
+            <div class="homework-item">
+                <h3>Задачи по ROI и транспортной задаче</h3>
+                <p class="homework-meta">Operations Research · Excel</p>
+                <p>
+                    Решение задач с использованием Excel Solver, построение графиков и подробные выводы.
+                </p>
+                <a href="#" target="_blank">Скачать Excel/Word</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сертификаты -->
+    <section class="section" id="certificates">
+        <div class="section-header">
+            <h2>Сертификаты</h2>
+            <p>Онлайн-курсы, тренинги, хакатоны</p>
+        </div>
+
+        <div class="cert-grid">
+            <figure class="cert-card">
+                <img src="images/cert1.jpg" alt="Certificate 1">
+                <figcaption>HTML, CSS & JavaScript Course · 2025</figcaption>
+            </figure>
+
+            <figure class="cert-card">
+                <img src="images/cert2.jpg" alt="Certificate 2">
+                <figcaption>Astrophysics Summer School · 2024</figcaption>
+            </figure>
+
+            <figure class="cert-card">
+                <img src="images/cert3.jpg" alt="Certificate 3">
+                <figcaption>AI in Education Workshop · 2025</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section section-alt" id="contact">
+        <div class="section-header">
+            <h2>Контакты</h2>
+            <p>Свяжись со мной по любому удобному каналу</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Мои контакты</h3>
+                <ul>
+                    <li><span>Телефон:</span> +XXX XX XXX XX XX</li>
+                    <li><span>Email:</span> <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></li>
+                    <li><span>Telegram:</span> <a href="https://t.me/yourusername" target="_blank">@yourusername</a></li>
+                    <li><span>Instagram:</span> <a href="https://instagram.com/yourinsta" target="_blank">@yourinsta</a></li>
+                    <li><span>Адрес:</span> Здесь можно написать город/улицу</li>
+                </ul>
+            </div>
+
+            <form class="contact-form" onsubmit="handleForm(event)">
+                <h3>Написать мне</h3>
+                <label>
+                    Имя
+                    <input type="text" id="name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" id="email" required>
+                </label>
+                <label>
+                    Сообщение
+                    <textarea id="message" rows="4" required></textarea>
+                </label>
+                <button type="submit" class="btn primary full">Отправить</button>
+                <p class="form-status" id="form-status"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p>© <span id="year"></span> Aikoz Bazarbayeva. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
